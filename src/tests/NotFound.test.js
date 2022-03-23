@@ -17,7 +17,7 @@ describe('Testando o Componente NotFound', () => {
     renderWithRouter(<NotFound />);
     const img = 'https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif';
     const imgEl = screen.getAllByRole('img', { src: img });
-    console.log(imgEl);
+    // console.log(imgEl);
     expect(imgEl[1].src).toBe(img);
   });
 });
