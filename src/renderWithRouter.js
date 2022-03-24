@@ -5,6 +5,7 @@ import App from './App'
 import { About } from './components';
 import { NotFound } from './components';
 import { Pokedex } from './components';
+import { Pokemon } from './components';
 
 const renderWithRouter = (component) => {
     const history = createMemoryHistory();

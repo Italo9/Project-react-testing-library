@@ -1,8 +1,5 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
-// import userEvent from '@testing-library/user-event';
-// import { Router, MemoryRouter } from 'react-router-dom';
-// import { createMemoryHistory } from 'history';
 import About from '../components/About';
 import renderWithRouter from '../renderWithRouter';
 
@@ -24,7 +21,7 @@ describe('Testando o Componente About', () => {
   test('Verifica se a página contém a seguinte imagem de uma Pokédex', () => {
     renderWithRouter(<About />);
     const img = 'https://cdn2.bulbagarden.net/upload/thumb/8/86/Gen_I_Pok%C3%A9dex.png/800px-Gen_I_Pok%C3%A9dex.png';
-    const imgEl = screen.getByRole('img', { src: img });
+    const imgEl = screen.getByRole('img');
     console.log(imgEl);
     expect(imgEl.src).toBe(img);
   });

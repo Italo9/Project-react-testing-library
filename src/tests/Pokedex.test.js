@@ -1,8 +1,6 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-// import { Router, MemoryRouter } from 'react-router-dom';
-// import { createMemoryHistory } from 'history';
 import Pokedex from '../components/Pokedex';
 import renderWithRouter from '../renderWithRouter';
 import pokemons from '../data';
