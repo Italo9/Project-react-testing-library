@@ -44,7 +44,6 @@ describe('Testando o Componente Pokedex', () => {
     const img = 'http://localhost/star-icon.svg';
     const imgEl = screen.getByRole('img',
       { name: /Pikachu is marked as favorite/i }); // name=alt
-    // console.log(imgEl);
     expect(imgEl.src).toBe(img);
   });
 });
